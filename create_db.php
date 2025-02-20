@@ -27,7 +27,7 @@ if (mysqli_query($conn, $sql)) {
 } else {
     echo "Error creating table: " . mysqli_error($conn);
 }
-
+echo"no";
 // Close connection
 mysqli_close($conn);
 ?>
