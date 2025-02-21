@@ -1,17 +1,19 @@
 <?php
-$server = "localhost";
-$username = "root"; // Default username for XAMPP
+$servername = "localhost";
+$username = "root"; 
 $password = "";
-$database = "test_db"; // Change this to your database name
+$database = "test_db"; 
 
 // Create connection
-$conn = mysqli_connect($server, $username, $password, $database);
+$conn = mysqli_connect($servername, $username, $password, $database);
 
 // Check connection
 if (!$conn) {
     die("Connection failed: " . mysqli_connect_error());
 }
-echo "Connection successful!<br>";
+else{
+    echo "Connection successful!<br>";
+}
 
 // SQL query to create a table
 $sql = "CREATE TABLE users (
@@ -27,7 +29,7 @@ if (mysqli_query($conn, $sql)) {
 } else {
     echo "Error creating table: " . mysqli_error($conn);
 }
-echo"no";
+
 // Close connection
 mysqli_close($conn);
 ?>
