@@ -24,7 +24,7 @@ echo "<br>";
 
 if($num>0){
     while($row=mysqli_fetch_assoc($result)){
-        echo $row['id']. " .hello " .$row['name'].  " your email is ". $row['email'];
+        echo $row['id']. " .hello " .$row['name'].  " welcome to ". $row['dest'];
         echo "<br>"; 
     }
     }
