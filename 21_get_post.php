@@ -51,7 +51,7 @@
   </div>
 </nav>
 
-<!--submit to a database-->
+<!--submit to a database----->
 
 <?php
 
