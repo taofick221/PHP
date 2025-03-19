@@ -67,7 +67,7 @@ if($_SERVER['REQUEST_METHOD']=='POST'){
 ?>
 
 
-<!--form-->
+
 
 <div class="container">
 <form action="/phpmycode/PHP/21_get_post.php"  method="post">
